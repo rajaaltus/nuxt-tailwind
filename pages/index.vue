@@ -26,9 +26,9 @@
           place!
         </p>
         <div class="mt-8 flex flex-wrap justify-between items-center">
-          <PropertyCard :property="property" />
-          <PropertyCard :property="property" />
-          <PropertyCard :property="property" />
+          <PropertyCard :property="property[0]" />
+          <PropertyCard :property="property[1]" />
+          <PropertyCard :property="property[2]" />
         </div>
       </div>
     </div>
@@ -80,19 +80,56 @@ export default {
             "https://images.unsplash.com/photo-1598845511224-75cd1ac5fd23?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1778&q=80",
           imageAlt: "colorado",
         },
+        {
+          city: "Darjling",
+          averagePrice: 99,
+          propertyCount: 244,
+          imageUrl:
+            "https://images.unsplash.com/photo-1599129194878-aae4bd2b779d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+          imageAlt: "colorado",
+        },
       ],
-      property: {
-        imageUrl:
-          "https://images.unsplash.com/photo-1598769569837-0ebb3f625485?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80",
-        imageAlt: "property 1",
-        beds: 3,
-        baths: 2,
-        title: "Modern home in the city center Modern home in the city center",
-        priceInCents: 23500,
-        formattedPrice: "$23,500",
-        reviewCount: 23,
-        rating: 4,
-      },
+      property: [
+        {
+          imageUrl:
+            "https://images.unsplash.com/photo-1598769569837-0ebb3f625485?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80",
+          imageAlt: "Grand Place",
+          beds: 3,
+          baths: 2,
+          title:
+            "Modern home in the city center Modern home in the city center",
+          priceInCents: 23500,
+          formattedPrice: "$23,500",
+          reviewCount: 23,
+          rating: 4,
+        },
+        {
+          imageUrl:
+            "https://images.unsplash.com/photo-1599202937077-3f7cdc53f2e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+          imageAlt: "Holiday Inn",
+          beds: 2,
+          baths: 2,
+          title:
+            "Luxury stay in the hot of the city. Feel like home in abroad.",
+          priceInCents: 20520,
+          formattedPrice: "$20,520",
+          reviewCount: 65,
+          rating: 4.5,
+        },
+        {
+          imageUrl:
+            "https://images.unsplash.com/photo-1598632022981-9426f46c6e97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=697&q=80",
+          imageAlt: "Green Box",
+          beds: 3,
+          baths: 2,
+          title:
+            "Modern home in the city center Modern home in the city center",
+          priceInCents: 23500,
+          formattedPrice: "$23,500",
+          reviewCount: 64,
+          rating: 3,
+        },
+      ],
     };
   },
 };

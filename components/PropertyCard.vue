@@ -7,6 +7,7 @@
         :alt="property.imageAlt"
       />
     </div>
+    <div></div>
     <div class="relative px-6 -mt-16 transform hover:scale-105 cursor-pointer transition ease-in duration-150">
       <div class="bg-white p-6 rounded-lg shadow-lg">
         <div class="flex items-baseline">

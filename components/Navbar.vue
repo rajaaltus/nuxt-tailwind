@@ -1,12 +1,13 @@
 <template>
-  <div
-    class="bg-gray-900"
-  >
-    <div class="sm:container sm:mx-auto sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3">
+  <div class="bg-gray-900">
+    <div
+      class="sm:container sm:mx-auto sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3"
+    >
       <div class="flex items-center px-4 py-3 justify-between sm:p-0">
         <div>
           <img class="h-10" src="/logo_apj.svg" alt="Logo APJ" />
         </div>
+        
         <div class="sm:hidden">
           <button
             @click="isOpen = !isOpen"
@@ -31,22 +32,23 @@
         :class="isOpen ? 'block' : 'hidden'"
         class="px-2 pt-2 pb-4 transition ease-in duration-300 sm:flex sm:p-0"
       >
-        <a
-          href="#"
+        <nuxt-link
+          to="/"
           class="block px-2 py-1 rounded text-white font-semibold hover:bg-gray-800 sm:mt-0 sm:ml-2"
-          >List your property</a
+          >List your property</nuxt-link
         >
-        <a
-          href="#"
+        <nuxt-link
+          to="/"
           class="mt-1 block px-2 py-1 rounded text-white font-semibold hover:bg-gray-800 sm:mt-0 sm:ml-2"
-          >Trips</a
+          >Trips</nuxt-link
         >
-        <a
-          href="#"
+        <nuxt-link
+          to="/"
           class="mt-1 block px-2 py-1 rounded text-white font-semibold hover:bg-gray-800 sm:mt-0 sm:ml-2"
-          >Messages</a
+          >Messages</nuxt-link
         >
       </div>
+      <account-dropdown class="ml-6" />
     </div>
   </div>
 </template>

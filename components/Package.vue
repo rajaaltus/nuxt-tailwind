@@ -1,5 +1,5 @@
 <template>
-    <div class="flex items-center mx-2 rounded-lg bg-white shadow-lg overflow-hidden transform hover:scale-105 cursor-pointer transition ease-in duration-150">
+    <div class="flex items-center mx-2 rounded-lg bg-white shadow-lg overflow-hidden transform hover:scale-105 cursor-pointer transition ease-in duration-150 hover:shadow-xl">
         <img
           class="h-32 w-32 flex-shrink-0 object-cover"
           :src="destination.imageUrl"
