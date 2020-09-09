@@ -1,8 +1,8 @@
 <template>
-  <div class="max-w-sm mb-4">
+  <div class="sm:max-w-sm max-w-full px-6 mb-4 py-4 sm:p-0 sm:mb-8">
     <div class="relative pb-5/6">
       <img
-        class="h-full w-full object-cover rounded-lg"
+        class="h-64 w-full object-cover rounded-lg"
         :src="property.imageUrl"
         :alt="property.imageAlt"
       />
