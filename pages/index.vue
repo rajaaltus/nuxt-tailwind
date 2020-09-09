@@ -32,6 +32,7 @@
 export default {
   data() {
     return {
+      loading: true,
       popularDestinations: [
         {
           city: "Toronto",
@@ -146,5 +147,6 @@ export default {
       ],
     };
   },
+  
 };
 </script>

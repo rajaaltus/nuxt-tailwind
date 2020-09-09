@@ -5,9 +5,9 @@
     </button>
     <button v-if="showDrop" @click="showDrop = false" tabindex="-1" class="fixed inset-0 h-full w-full"></button>
     <div v-if="showDrop" class="absolute z-10 right-0 mt-2 py-2 w-56 bg-white rounded-lg shadow-xl">
-      <a class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white" href="#">Account Settings</a>
-      <a class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white" href="#">Support</a>
-      <a class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white" href="#">Sign out</a>
+      <a class="block px-4 py-2 text-gray-800 hover:bg-green-600 hover:text-white" href="#">Account Settings</a>
+      <a class="block px-4 py-2 text-gray-800 hover:bg-green-600 hover:text-white" href="#">Support</a>
+      <a class="block px-4 py-2 text-gray-800 hover:bg-green-600 hover:text-white" href="#">Sign out</a>
     </div>
   </div>
 </template>
