@@ -18,7 +18,7 @@
 
       <div :class="isOpen ? 'block' : 'hidden'" class="sm:block">
         <div class="px-2 pt-2 pb-4 sm:flex sm:items-center sm:p-0">
-          <nuxt-link to="/" class="block px-2 py-1 rounded text-white font-semibold hover:bg-gray-800 sm:mt-0 sm:ml-2">List your property</nuxt-link>
+          <nuxt-link to="/login" class="block px-2 py-1 rounded text-white font-semibold hover:bg-gray-800 sm:mt-0 sm:ml-2">List your property</nuxt-link>
           <nuxt-link to="/" class="mt-1 block px-2 py-1 rounded text-white font-semibold hover:bg-gray-800 sm:mt-0 sm:ml-2">Trips</nuxt-link>
           <nuxt-link to="/" class="mt-1 block px-2 py-1 rounded text-white font-semibold hover:bg-gray-800 sm:mt-0 sm:ml-2">Messages</nuxt-link>
           <account-dropdown class="hidden sm:block sm:ml-6" />

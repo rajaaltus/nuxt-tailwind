@@ -47,6 +47,9 @@ export default {
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     "@nuxtjs/tailwindcss",
     "@nuxtjs/google-fonts",
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-177615943-1'
+    }]
   ],
   googleFonts: {
     families: {
