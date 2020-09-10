@@ -7,8 +7,8 @@
         </div>
       </div>
 
-      <div v-else class="relative pb-5/6">
-        <img class="h-64 w-full object-cover rounded-lg" :src="property.imageUrl" :alt="property.imageAlt" />
+      <div v-else class="relative pb-2/3">
+        <img class="absolute top-0 bottom-0 h-full w-full object-cover rounded-lg" :src="property.imageUrl" :alt="property.imageAlt" />
       </div>
       <div class="relative px-6 -mt-16 transform hover:scale-105 cursor-pointer transition ease-in duration-150">
         <div v-if="loading" class="animate-pulse bg-white rounded-lg px-4 h-32">
